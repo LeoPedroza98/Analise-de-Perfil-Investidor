@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/question1Fragment">
+
+    <fragment
+        android:id="@+id/question1Fragment"
+        android:name="com.example.profileAnalyseTP3.fragments.QuestionOneFragment"
+        android:label="question1_fragment"
+        tools:layout="@layout/fragment_questionone" >
+        <action
+            android:id="@+id/action_question1Fragment_to_question2Fragment2"
+            app:destination="@id/question2Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/question2Fragment2"
+        android:name="com.example.profileAnalyseTP3.fragments.QuestionTwoFragment"
+        android:label="question2_fragment"
+        tools:layout="@layout/fragment_questiontwo" >
+        <action
+            android:id="@+id/action_question2Fragment2_to_question3Fragment"
+            app:destination="@id/question3Fragment" />
+    </fragment>
+    <activity
+        android:id="@+id/resultActivity"
+        android:name="com.example.profileAnalyseTP3.activities.ResultActivity"
+        android:label="activity_result"
+        tools:layout="@layout/activity_result" />
+    <fragment
+        android:id="@+id/question3Fragment"
+        android:name="com.example.profileAnalyseTP3.fragments.QuestionThreeFragment"
+        android:label="fragment_question3"
+        tools:layout="@layout/fragment_questionthree" >
+        <action
+            android:id="@+id/action_question3Fragment_to_question4Fragment"
+            app:destination="@id/question4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question4Fragment"
+        android:name="com.example.profileAnalyseTP3.fragments.QuestionFourFragment"
+        android:label="fragment_question4"
+        tools:layout="@layout/fragment_questionfour" >
+        <action
+            android:id="@+id/action_question4Fragment_to_question5Fragment"
+            app:destination="@id/question5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question5Fragment"
+        android:name="com.example.profileAnalyseTP3.fragments.QuestionFiveFragment"
+        android:label="fragment_question5"
+        tools:layout="@layout/fragment_questionfive" >
+        <action
+            android:id="@+id/action_question5Fragment_to_question6Fragment"
+            app:destination="@id/question6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question6Fragment"
+        android:name="com.example.profileAnalyseTP3.fragments.QuestionSixFragment"
+        android:label="fragment_question6"
+        tools:layout="@layout/fragment_questionsix" >
+        <action
+            android:id="@+id/action_question6Fragment_to_question7Fragment"
+            app:destination="@id/question7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question7Fragment"
+        android:name="com.example.profileAnalyseTP3.fragments.QuestionSevenFragment"
+        android:label="fragment_question7"
+        tools:layout="@layout/fragment_questionseven" >
+        <action
+            android:id="@+id/action_question7Fragment_to_question8Fragment"
+            app:destination="@id/question8Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question8Fragment"
+        android:name="com.example.profileAnalyseTP3.fragments.QuestionEightFragment"
+        android:label="fragment_question8"
+        tools:layout="@layout/fragment_questioneight" >
+        <action
+            android:id="@+id/action_question8Fragment_to_question9Fragment"
+            app:destination="@id/question9Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question9Fragment"
+        android:name="com.example.profileAnalyseTP3.fragments.QuestionNineFragment"
+        android:label="fragment_question9"
+        tools:layout="@layout/fragment_questionnine" >
+        <action
+            android:id="@+id/action_question9Fragment_to_resultActivity"
+            app:destination="@id/resultActivity" />
+    </fragment>
+</navigation>
